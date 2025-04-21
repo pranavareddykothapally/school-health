@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.badge {
+    padding: 0.6em 0.8em;
+}
+
+form {
+    background-image: url('../images/form.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form .form-control {
+    border-radius: 0.375rem;
+    box-shadow: none;
+}
+
+form button.btn-primary {
+    background-color: #0056b3;
+    border: none;
+}
+
+.dashboard-container {
+    background-image: url('../images/dashboard.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #e9ecef;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #212529;
+}
+
+.hero-text p {
+    color: #495057;
+    font-size: 1.1rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+    object-fit: contain;
+  }
+  
+  .navbar-brand span {
+    font-size: 1.5rem;
+    color: #0056b3;
+  }
+  

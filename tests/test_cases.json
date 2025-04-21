@@ -1,0 +1,15 @@
+[
+    {
+      "PARENT_NAME": "John Doe",
+      "PARENT_TZ": "123456789",
+      "CHILDRENS_NAMES": "Jane Doe, Max Doe",
+      "CHILDRENS_TZ": "987654321,123123123"
+    },
+    {
+      "PARENT_NAME": "Alice Smith",
+      "PARENT_TZ": "111222333",
+      "CHILDRENS_NAMES": "Bob Smith",
+      "CHILDRENS_TZ": "444555666"
+    }
+  ]
+  
