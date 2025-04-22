@@ -12,7 +12,9 @@ end
 
 # 3) open browser & perform login
 browser = Watir::Browser.new :chrome, headless: ENV['HEADLESS'] == 'true'
-browser.goto ENV['BASE_URL']
+
+browser.goto "#{ENV['BASE_URL']}/login.html"
+
 
 # 4) use the actual selectors from your index.html!
 #    (update :id or :name or :class_name to match your HTML)

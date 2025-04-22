@@ -3,23 +3,29 @@ require 'dotenv'
 require 'watir'
 
 # Load env
-Dotenv.load(File.expand_path('.env', __dir__))
+Dotenv.load(File.expand_path('../../.env', __dir__))
+
 
 # Validate required variables (TC 010 + TC 002)
 %w[BASE_URL USERNAME PASSWORD].each do |var|
   raise ArgumentError, "#{var} missing" unless ENV[var]&.strip&.length&.positive?
 end
 
+# ensure tmp/ exists for screenshots
+Dir.mkdir('tmp') unless Dir.exist?('tmp')
+
 # Launch browser & login (TC 001)
 browser = Watir::Browser.new :chrome,
   headless: ENV['HEADLESS'] == 'true'
 
-browser.goto ENV['BASE_URL']
+# ← ADD THIS
+browser.goto "#{ENV['BASE_URL']}/login.html"
 
-# *** Update these selectors to match your actual HTML ***
+# now interact with your fields
 browser.text_field(id: 'user').set     ENV['USERNAME']
 browser.text_field(id: 'pass').set     ENV['PASSWORD']
 browser.button(text: 'Sign In').click
+
 
 # Verify dashboard
 unless browser.url.include?('/dashboard')
